@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80">
+  <g fill="#17458f" font-family="'Open Sans','Helvetica Neue',Arial,sans-serif" font-weight="800">
+    <text x="0" y="58" font-size="58" letter-spacing="-2">Interact</text>
+  </g>
+  <g transform="translate(258, 18)">
+    <circle cx="22" cy="22" r="22" fill="#17458f"/>
+    <path d="M22 8 L25.3 18.5 L36.5 18.5 L27.6 25 L31 35.5 L22 29 L13 35.5 L16.4 25 L7.5 18.5 L18.7 18.5 Z" fill="#fff"/>
+  </g>
+</svg>
