@@ -1,90 +1,97 @@
 import Link from "next/link";
 
+const INSTAGRAM_URL = "https://www.instagram.com/interact.uwc.vestland/";
+const DONATE_URL = "DONATE_URL";
+
 export default function GetInvolved() {
   return (
     <>
-      <section className="pt-[140px] pb-16 lg:pb-24 relative overflow-hidden">
-        <div className="absolute inset-0 grid-bg opacity-50" />
-        <div className="absolute -top-40 -right-32 w-[600px] h-[600px] rounded-full bg-rotary/[.08] blur-3xl" />
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
-          <span className="tag"><span className="w-1.5 h-1.5 rounded-full bg-rotary"/>Join us</span>
-          <h1 className="mt-6 text-display font-bold tracking-tight max-w-[14ch]">
-            Show up. <span className="gradient-text">Build something.</span>
-          </h1>
-          <p className="mt-8 max-w-2xl text-lg text-ink/65 leading-relaxed">
-            Three ways to be part of Interact at UWC Vestland — whether you have an idea, want to support one, or just want to follow what we're doing.
-          </p>
+      <section className="paper-tex">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-16 lg:pt-24 pb-16">
+          <div className="flex items-center justify-between flex-wrap gap-3 pb-4 border-b border-[var(--rule)]">
+            <div className="text-[11px] tracking-[0.18em] uppercase font-semibold text-ink/65">Get involved · Section §04</div>
+            <div className="text-[11px] tracking-[0.18em] uppercase text-ink/50">Three ways in</div>
+          </div>
+          <div className="grid lg:grid-cols-12 gap-10 mt-12">
+            <div className="lg:col-span-8">
+              <div className="eyebrow mb-6">Join us</div>
+              <h1 className="serif font-medium leading-[0.96] tracking-[-0.02em]" style={{ fontSize: "clamp(2.6rem, 7vw, 6.5rem)" }}>
+                Show up. <span className="italic font-light text-rotary">Build something.</span>
+              </h1>
+            </div>
+            <p className="lg:col-span-4 lg:pl-10 lg:border-l border-[var(--rule)] serif text-[19px] leading-relaxed text-ink/85">
+              Three lanes — whether you have an idea, want to support one, or just want to follow what we're doing.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="py-16 lg:py-24 border-t border-ink/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid md:grid-cols-3 gap-6">
+      <section className="py-12 lg:py-20 border-t border-[var(--rule)]">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid md:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
           {[
             { n: "01", t: "Become a member", b: "Open to any UWC RCN student. Weekly meetings Wednesdays 17:30, lower kantina. Bring an idea or just curiosity.", cta: "Email us", href: "mailto:interact@uwcrcn.no" },
             { n: "02", t: "Partner with us", b: "NGO, Rotary club, alum, or local business — if you want to mentor a project, host an event, or sponsor an initiative, we want to hear from you.", cta: "Reach out", href: "/contact" },
-            { n: "03", t: "Follow + share", b: "We post project updates, calls for ideas, and member features on Instagram. Sharing is the easiest way to support the club.", cta: "Instagram", href: "INSTAGRAM_URL" },
+            { n: "03", t: "Follow + share", b: "We post project updates, calls for ideas, and member features on Instagram. Sharing is the easiest way to support the club.", cta: "@interact.uwc.vestland", href: INSTAGRAM_URL },
           ].map(c => (
-            <div key={c.n} className="reveal group bg-white rounded-3xl p-10 border border-ink/[.06] hover-lift">
-              <div className="text-xs font-bold tracking-[0.2em] text-rotary">{c.n}</div>
-              <div className="mt-4 text-2xl font-bold tracking-tight">{c.t}</div>
-              <p className="mt-4 text-ink/70 leading-relaxed">{c.b}</p>
-              <Link href={c.href} className="mt-8 inline-flex items-center gap-2 font-semibold text-rotary link-underline">{c.cta} <span aria-hidden>→</span></Link>
+            <div key={c.n} className="reveal bg-paper p-9 lg:p-10 hover:bg-cream/40 transition-colors group">
+              <div className="text-[12px] font-bold tracking-[0.2em] text-rotary tabular">{c.n}</div>
+              <div className="mt-4 serif text-[clamp(1.6rem,2.4vw,2.1rem)] font-medium tracking-tight">{c.t}</div>
+              <p className="mt-4 text-[15.5px] text-ink/80 leading-relaxed">{c.b}</p>
+              <Link href={c.href} className="mt-8 link-arrow">{c.cta} <span aria-hidden>→</span></Link>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-cream/40 border-y border-ink/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 reveal">
-              <span className="tag"><span className="w-1.5 h-1.5 rounded-full bg-uwc"/>Donate</span>
-              <h2 className="mt-5 text-huge font-bold tracking-tight">Fund a project.</h2>
-              <p className="mt-6 text-lg text-ink/70 leading-relaxed">
-                We keep member dues low so finances aren't a barrier to joining. Donations go directly to project costs — campaign materials, travel to Bergen, the Copenhagen exchange, and seed funding for the next student-led initiative.
+      {/* Donate */}
+      <section className="py-20 lg:py-28 bg-rotary text-paper">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7">
+            <div className="text-[11px] uppercase tracking-[0.22em] font-semibold text-paper/60 mb-6">§05 · Support our work</div>
+            <h2 className="serif font-medium leading-[1.02] tracking-[-0.018em]" style={{ fontSize: "clamp(2.4rem, 5vw, 4.6rem)" }}>
+              Fund a project.
+            </h2>
+            <p className="mt-7 serif text-[19px] leading-[1.55] text-paper/85 max-w-xl">
+              We keep dues low so finances aren't a barrier to joining. Donations cover campaign materials, travel to Bergen, the Copenhagen exchange, and seed funding for the next student-led initiative.
+            </p>
+            <p className="mt-3 text-[13.5px] text-paper/65">
+              Donations are channelled through Førde Rotary Club. Receipts on request.
+            </p>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="bg-paper text-ink p-10 lg:p-12">
+              <div className="text-[11px] uppercase tracking-[0.22em] font-semibold text-ink/55">Donate</div>
+              <div className="mt-3 serif text-5xl font-medium">Coming soon</div>
+              <p className="mt-5 text-[15.5px] text-ink/75 leading-relaxed">
+                We're finalising the partnership-backed donation flow with Førde Rotary Club. We'll publish the link on this page and on Instagram.
               </p>
-              <p className="mt-4 text-sm text-ink/55">
-                Donations are channelled through Førde Rotary Club. Receipts available on request.
-              </p>
-            </div>
-            <div className="lg:col-span-6 reveal">
-              <div className="relative bg-ink text-paper rounded-3xl p-10 lg:p-12 overflow-hidden">
-                <div className="absolute inset-0 grid-bg opacity-20" />
-                <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-rotary/40 blur-3xl" />
-                <div className="relative">
-                  <div className="text-xs uppercase tracking-[0.18em] text-paper/50">Support our work</div>
-                  <div className="mt-4 text-5xl font-bold tracking-tight">Donate</div>
-                  <p className="mt-6 text-paper/70 leading-relaxed">Coming soon — we're finalising our partnership-backed donation flow with the Førde Rotary Club.</p>
-                  <a href="DONATE_URL" className="mt-10 inline-flex items-center gap-3 px-7 py-4 bg-paper text-ink rounded-full font-semibold hover:bg-uwc hover:text-paper transition-all duration-500">
-                    <span>Donate now</span>
-                    <span>→</span>
-                  </a>
-                </div>
-              </div>
+              <a href={DONATE_URL} className="btn mt-8">Donate now <span aria-hidden>→</span></a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <div className="reveal mb-12">
-            <span className="tag"><span className="w-1.5 h-1.5 rounded-full bg-rotary"/>FAQ</span>
-            <h2 className="mt-5 text-huge font-bold tracking-tight">Common questions.</h2>
-          </div>
-          <div className="space-y-3 max-w-3xl">
+      {/* FAQ */}
+      <section className="py-20 lg:py-28">
+        <div className="max-w-[1100px] mx-auto px-6 lg:px-10">
+          <div className="eyebrow eyebrow-num mb-6" data-num="§06">Common questions</div>
+          <h2 className="serif font-medium leading-[1.02] tracking-tight mb-12" style={{ fontSize: "clamp(2.1rem, 3.6vw, 3.4rem)" }}>
+            Asked & answered.
+          </h2>
+
+          <div className="border-t border-ink">
             {[
               { q: "Do I need an idea to join?", a: "No. About half of our members joined to support someone else's project. The other half came in with an idea. Both are equally welcome." },
-              { q: "How much time does it take?", a: "Roughly an hour weekly for general members, more if you lead a project. We respect that EACs and academics come first." },
+              { q: "How much time does it take?", a: "About an hour weekly for general members, more if you lead a project. We respect that EACs and academics come first." },
               { q: "Are first years welcome?", a: "Yes — strongly encouraged. The club exists for first years just as much as second years, and we plan succession from day one." },
-              { q: "Is there a cost?", a: "We charge minimal dues to cover Rotary registration. We're also planning a fundraising event to keep dues as low as possible." },
+              { q: "Is there a cost?", a: "Minimal dues to cover Rotary registration. We're also planning a fundraising event to keep dues as low as possible." },
             ].map((f) => (
-              <details key={f.q} className="reveal group bg-white rounded-2xl border border-ink/[.06] overflow-hidden">
-                <summary className="cursor-pointer list-none flex items-center justify-between p-6 lg:p-7 font-semibold text-lg tracking-tight">
-                  {f.q}
-                  <span className="ml-4 w-8 h-8 rounded-full bg-ink/[.04] flex items-center justify-center text-ink/60 transition-transform duration-300 group-open:rotate-45">+</span>
+              <details key={f.q} className="reveal group border-b border-[var(--rule)] py-6">
+                <summary className="cursor-pointer list-none flex items-baseline justify-between gap-6">
+                  <span className="serif text-[clamp(1.3rem,2vw,1.7rem)] font-medium tracking-tight">{f.q}</span>
+                  <span className="shrink-0 text-2xl font-light text-ink/55 transition-transform duration-300 group-open:rotate-45">+</span>
                 </summary>
-                <div className="px-6 lg:px-7 pb-7 text-ink/70 leading-relaxed">{f.a}</div>
+                <div className="mt-4 serif text-[18px] leading-[1.55] text-ink/80 pr-12">{f.a}</div>
               </details>
             ))}
           </div>

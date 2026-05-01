@@ -10,37 +10,50 @@ const NAV = [
   { href: "/contact", label: "Contact" },
 ];
 
+const INSTAGRAM_URL = "https://www.instagram.com/interact.uwc.vestland/";
+
+function InstagramIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
+    </svg>
+  );
+}
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
+    const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? "bg-paper/85 backdrop-blur-md border-b border-ink/[.06]" : "bg-transparent"}`}>
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-[72px]">
-        <Link href="/" className="group flex items-center gap-3">
-          <div className="relative w-9 h-9">
-            <div className="absolute inset-0 rounded-full bg-rotary group-hover:scale-110 transition-transform duration-500" />
-            <div className="absolute inset-[3px] rounded-full bg-uwc opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-sm tracking-tight">I</div>
-          </div>
-          <div className="leading-none">
-            <div className="font-bold text-[15px] tracking-tight">Interact Club</div>
-            <div className="text-[11px] text-ink/60 tracking-wide uppercase">UWC Vestland</div>
+    <header className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${scrolled ? "bg-paper/95 backdrop-blur border-b border-[var(--rule)]" : "bg-paper border-b border-transparent"}`}>
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex items-center justify-between h-[72px]">
+        <Link href="/" className="group flex items-center gap-3" aria-label="Interact Club of UWC Vestland">
+          <img src="/logo-mark.svg" alt="" width={36} height={36} className="transition-transform duration-500 group-hover:rotate-[18deg]" />
+          <div className="leading-tight">
+            <div className="font-extrabold text-[15.5px] tracking-tight">Interact Club</div>
+            <div className="text-[10.5px] tracking-[0.18em] uppercase text-ink/55">UWC · Vestland</div>
           </div>
         </Link>
         <nav className="hidden md:flex items-center gap-1">
-          {NAV.map((n) => (
-            <Link key={n.href} href={n.href} className="px-4 py-2 text-sm font-medium text-ink/75 hover:text-rotary transition-colors duration-300">
+          {NAV.slice(1).map((n) => (
+            <Link key={n.href} href={n.href} className="relative px-4 py-2 text-[14px] font-medium text-ink/80 hover:text-rotary transition-colors">
               {n.label}
             </Link>
           ))}
-          <Link href="/get-involved" className="ml-4 px-5 py-2 rounded-full bg-ink text-paper text-sm font-semibold hover:bg-rotary transition-colors duration-300">
-            Join us
+          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer"
+            aria-label="Instagram"
+            className="ml-2 w-9 h-9 flex items-center justify-center rounded-full border border-[var(--rule)] text-ink/70 hover:text-rotary hover:border-rotary transition-colors">
+            <InstagramIcon className="w-[18px] h-[18px]" />
+          </a>
+          <Link href="/get-involved" className="ml-3 px-4 py-2 bg-ink text-paper text-[13.5px] font-semibold tracking-tight border border-ink hover:bg-rotary hover:border-rotary transition-colors">
+            Join the club
           </Link>
         </nav>
         <button onClick={() => setOpen(!open)} className="md:hidden p-2 -mr-2" aria-label="Menu">
@@ -52,13 +65,16 @@ export default function Header() {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-paper border-t border-ink/10">
-          <div className="px-6 py-4 flex flex-col">
+        <div className="md:hidden bg-paper border-t border-[var(--rule)]">
+          <div className="px-6 py-3 flex flex-col">
             {NAV.map((n) => (
-              <Link key={n.href} href={n.href} onClick={() => setOpen(false)} className="py-3 text-base font-medium border-b border-ink/5 last:border-0">
+              <Link key={n.href} href={n.href} onClick={() => setOpen(false)} className="py-3 text-base font-medium border-b border-[var(--rule)] last:border-0">
                 {n.label}
               </Link>
             ))}
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="py-3 text-base font-medium flex items-center gap-2">
+              <InstagramIcon className="w-5 h-5"/> Instagram
+            </a>
           </div>
         </div>
       )}

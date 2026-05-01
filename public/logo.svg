@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" width="240" height="64">
+  <g>
+    <!-- Mark: a thin Rotary-blue ring with a tight UWC-green disc inset, evoking a wheel + a globe -->
+    <circle cx="32" cy="32" r="26" fill="none" stroke="#17458f" stroke-width="3"/>
+    <circle cx="32" cy="32" r="14" fill="#46988B"/>
+    <!-- Six small notches around the ring (six avenues of service nod) -->
+    <g fill="#17458f">
+      <rect x="31" y="2" width="2" height="6" rx="1"/>
+      <rect x="31" y="56" width="2" height="6" rx="1"/>
+      <rect x="2" y="31" width="6" height="2" rx="1"/>
+      <rect x="56" y="31" width="6" height="2" rx="1"/>
+      <rect x="11" y="11" width="2" height="6" rx="1" transform="rotate(-45 12 14)"/>
+      <rect x="51" y="11" width="2" height="6" rx="1" transform="rotate(45 52 14)"/>
+      <rect x="11" y="47" width="2" height="6" rx="1" transform="rotate(45 12 50)"/>
+      <rect x="51" y="47" width="2" height="6" rx="1" transform="rotate(-45 52 50)"/>
+    </g>
+    <!-- Inner serif "I" -->
+    <g fill="#ffffff">
+      <rect x="29.5" y="22" width="5" height="20"/>
+      <rect x="25" y="22" width="14" height="2.5"/>
+      <rect x="25" y="39.5" width="14" height="2.5"/>
+    </g>
+  </g>
+  <!-- Wordmark -->
+  <g font-family="'Open Sans','Helvetica Neue',Arial,sans-serif" fill="#0a0f1f">
+    <text x="76" y="34" font-size="22" font-weight="800" letter-spacing="-0.5">Interact</text>
+    <text x="76" y="51" font-size="9.5" font-weight="600" letter-spacing="2.6" fill="#46988B">UWC VESTLAND</text>
+  </g>
+</svg>
