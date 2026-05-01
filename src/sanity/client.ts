@@ -1,8 +1,10 @@
 import { createClient } from "next-sanity";
 
-export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "pk90lq2s";
-export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
-export const apiVersion = process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2024-10-01";
+// Sanity projectId is a public identifier — safe to hardcode
+const sanitize = (v: string | undefined, fb: string) => (v && /^[a-z0-9-]+$/.test(v.trim()) ? v.trim() : fb);
+export const projectId = sanitize(process.env.NEXT_PUBLIC_SANITY_PROJECT_ID, "pk90lq2s");
+export const dataset = sanitize(process.env.NEXT_PUBLIC_SANITY_DATASET, "production");
+export const apiVersion = (process.env.NEXT_PUBLIC_SANITY_API_VERSION || "2024-10-01").trim();
 
 export const sanity = createClient({
   projectId,
