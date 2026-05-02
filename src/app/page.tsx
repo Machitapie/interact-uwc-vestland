@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container-x pt-10 lg:pt-16 pb-16 lg:pb-28">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-7 flex flex-col justify-center">
-              <div className="tag-soft text-[var(--rotary)] mb-7">Service Above Self · Rotary Interact</div>
+              <div className="tag-soft text-[var(--rotary)] mb-7">Chartered with Førde Rotary Club</div>
               <h1 className="h-display text-[clamp(3rem,8.4vw,7.6rem)]">
                 Where students at UWC <span className="text-[var(--rotary)]">take action.</span>
               </h1>

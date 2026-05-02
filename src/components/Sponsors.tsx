@@ -1,8 +1,7 @@
 const sponsors = [
   { name: "Rotary International", src: "/logos/rotary.svg", href: "https://www.rotary.org", note: "Parent organisation" },
   { name: "Interact", src: "/logos/interact-official.png", href: "https://www.rotary.org/en/get-involved/interact-clubs", note: "Youth program" },
-  { name: "UWC Red Cross Nordic", src: "/logos/uwcrcn-color.jpg", href: "https://www.uwcrcn.no", note: "Host school" },
-  { name: "Vestland fylkeskommune", src: "/logos/vestland.png", href: "https://www.vestlandfylke.no", note: "Local partner" },
+  { name: "UWC Red Cross Nordic", src: "/logos/uwcrcn-color.png", href: "https://www.uwcrcn.no", note: "Host school" },
 ];
 
 export default function Sponsors() {
@@ -15,17 +14,17 @@ export default function Sponsors() {
             <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Backed by a global network.</h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[17px] leading-[1.6] text-[var(--ink)]/75 self-end">
-            Chartered through Førde Rotary Club. Hosted at UWC Red Cross Nordic. Supported locally by Vestland fylkeskommune. Plugged into Rotary International's network of 1.2&nbsp;million members across 140 countries.
+            Chartered through Førde Rotary Club. Hosted at UWC Red Cross Nordic. Plugged into Rotary International's network of 1.2&nbsp;million members across 140 countries.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[var(--rule)] border border-[var(--rule)]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
           {sponsors.map((s) => (
             <a key={s.name} href={s.href} target="_blank" rel="noreferrer"
-              className="reveal group relative bg-white p-8 lg:p-12 flex flex-col items-center justify-center min-h-[220px] hover:bg-[var(--bg)] transition-colors">
-              <div className="h-16 w-full flex items-center justify-center">
-                <img src={s.src} alt={s.name} className="max-h-16 max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.05]" />
+              className="group relative bg-white p-10 lg:p-14 flex flex-col items-center justify-center min-h-[260px] hover:bg-[var(--bg)] transition-colors">
+              <div className="h-24 w-full flex items-center justify-center">
+                <img src={s.src} alt={s.name} className="max-h-24 max-w-[80%] object-contain transition-transform duration-500 group-hover:scale-[1.04]" />
               </div>
-              <div className="mt-6 text-center">
+              <div className="mt-7 text-center">
                 <div className="text-[14px] font-bold tracking-tight">{s.name}</div>
                 <div className="kicker text-[var(--ink)]/45 mt-1.5">{s.note}</div>
               </div>

@@ -1,59 +1,32 @@
-// Abstract Vestland fjord/mountain scene as a clean geometric SVG, layered with the cyan Interact gear.
+// Real photo of Norway — the place this club calls home — with a slow-spinning Rotary wheel accent.
 export default function HeroVisual() {
   return (
-    <div className="relative w-full aspect-[4/5] lg:aspect-[3/4]">
-      <svg viewBox="0 0 600 800" className="absolute inset-0 w-full h-full" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#eaf3ef"/>
-            <stop offset="1" stopColor="#cfe2dc"/>
-          </linearGradient>
-          <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#46988B"/>
-            <stop offset="1" stopColor="#2f6e64"/>
-          </linearGradient>
-          <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#17458f"/>
-            <stop offset="1" stopColor="#0e2a5c"/>
-          </linearGradient>
-          <linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#3a6abf"/>
-            <stop offset="1" stopColor="#17458f"/>
-          </linearGradient>
-        </defs>
-        {/* Sky */}
-        <rect width="600" height="800" fill="url(#sky)"/>
-        {/* Sun mark */}
-        <circle cx="430" cy="180" r="56" fill="#f5e6c5" opacity="0.85"/>
-        {/* Far mountains */}
-        <path d="M0,420 L80,330 L160,400 L240,300 L320,380 L400,290 L480,370 L600,310 L600,500 L0,500 Z" fill="url(#mountain2)" opacity="0.85"/>
-        {/* Front mountains */}
-        <path d="M0,500 L60,420 L150,490 L240,360 L340,470 L440,400 L600,460 L600,620 L0,620 Z" fill="url(#mountain1)"/>
-        {/* Snow caps */}
-        <g fill="#f7f5ef" opacity="0.85">
-          <path d="M236,365 L260,420 L220,420 Z"/>
-          <path d="M340,470 L368,495 L312,495 Z"/>
-          <path d="M150,490 L172,510 L128,510 Z"/>
-        </g>
-        {/* Water */}
-        <rect y="620" width="600" height="180" fill="url(#water)"/>
-        {/* Water shimmer lines */}
-        <g stroke="#fafaf7" strokeWidth="1" opacity="0.35">
-          <line x1="60" y1="660" x2="180" y2="660"/>
-          <line x1="220" y1="700" x2="380" y2="700"/>
-          <line x1="40" y1="740" x2="220" y2="740"/>
-          <line x1="280" y1="730" x2="420" y2="730"/>
-          <line x1="100" y1="780" x2="260" y2="780"/>
-        </g>
-      </svg>
-      {/* Floating Rotary wheel, slow spin */}
+    <div className="relative w-full aspect-[4/5] lg:aspect-[3/4] overflow-hidden">
+      {/* Photo */}
       <img
-        src="/logos/rotary-wheel-cyan.jpg"
+        src="/images/hero-norway.jpg"
+        alt="Sunset over Vestland, Norway"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
+      {/* Slight bottom gradient for caption legibility */}
+      <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-[var(--ink)]/55 via-[var(--ink)]/15 to-transparent" />
+
+      {/* Rotating Interact wheel — small, top-left accent */}
+      <img
+        src="/logos/rotary-wheel-cyan.png"
         alt=""
         aria-hidden
-        className="absolute -top-10 -right-6 w-44 lg:w-60 animate-[spin_42s_linear_infinite] mix-blend-multiply"
+        className="absolute top-4 left-4 lg:top-5 lg:left-5 w-20 lg:w-28 animate-[spin_42s_linear_infinite] drop-shadow-[0_4px_16px_rgba(0,0,0,0.25)]"
       />
 
+      {/* Caption */}
+      <div className="absolute bottom-5 left-5 right-5 lg:bottom-7 lg:left-7 lg:right-7 text-white">
+        <div className="text-[10.5px] tracking-[0.2em] uppercase font-bold text-white/85">Vestland · Norway</div>
+        <div className="mt-1.5 text-[15px] lg:text-[16px] font-semibold leading-snug">
+          Where students from 90+ countries call home for two years.
+        </div>
+      </div>
     </div>
   );
 }

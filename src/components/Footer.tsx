@@ -16,8 +16,8 @@ export default function Footer() {
             <p className="mt-6 max-w-md text-white/70 leading-relaxed text-[15px]">
               A student-led Rotary Interact Club, chartered with Førde Rotary Club. Hosted at UWC Red Cross Nordic in Flekke, Norway.
             </p>
-            <div className="mt-8">
-              <img src="/logos/header-brand.png" alt="Interact · UWC" className="h-10 brightness-0 invert opacity-90" />
+            <div className="mt-8 inline-block bg-white px-5 py-3">
+              <img src="/logos/header-brand.png" alt="Interact · UWC" className="h-9" />
             </div>
           </div>
           <div className="lg:col-span-3">

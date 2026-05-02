@@ -12,7 +12,12 @@ export const metadata: Metadata = {
   description:
     "The first UWC Interact Club. A student-led branch of Rotary International at UWC Red Cross Nordic — chartered through Førde Rotary Club.",
   metadataBase: new URL("https://interact-uwc-vestland.vercel.app"),
-  icons: { icon: "/favicon.svg" },
+  icons: {
+    icon: [
+      { url: "/favicon-64.png", type: "image/png", sizes: "64x64" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Interact Club of UWC Vestland",
     description: "Student-led, project-based, chartered with Førde Rotary Club.",
