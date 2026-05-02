@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,7 +15,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://interact-uwc-vestland.vercel.app"),
   icons: {
     icon: [
-      { url: "/favicon-64.png", type: "image/png", sizes: "64x64" },
+      { url: "/favicon-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-96.png", type: "image/png", sizes: "96x96" },
+      { url: "/favicon-192.png", type: "image/png", sizes: "192x192" },
     ],
     apple: "/apple-touch-icon.png",
   },
@@ -33,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Reveal />
         <main className="flex-1 pt-[76px]">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
