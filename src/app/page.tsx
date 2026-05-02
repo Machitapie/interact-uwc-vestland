@@ -115,7 +115,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
             {[
               { n: "01", t: "Student-led", b: "The board is students. Project leads are students. We don't ask permission to start — we ask for help to ship." },
-              { n: "02", t: "Project-based, not advocacy", b: "Every project answers to a real partner with a real timeline. If we can't point at an outcome, we shouldn't have started." },
+              { n: "02", t: "Project-based", b: "Every project answers to a real partner with a real timeline. If we can't point at an outcome, we shouldn't have started." },
               { n: "03", t: "Locally rooted, globally connected", b: "Førde first, then Bergen, Oslo, Copenhagen, Geneva. Real relationships compound over time." },
             ].map((p) => (
               <div key={p.n} className="reveal bg-white p-9 lg:p-12 group">
