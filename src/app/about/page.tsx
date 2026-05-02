@@ -1,148 +1,113 @@
 const board = [
-  { role: "Co-President", name: "Asa", country: "—" },
-  { role: "Co-President", name: "Henri", country: "Belgium" },
-  { role: "Secretary", name: "Beka", country: "—" },
-  { role: "Treasurer", name: "Frans", country: "Netherlands" },
-  { role: "Communications", name: "Nowa", country: "—" },
-];
-
-const members = [
-  ["Nana Kyriakou","Cyprus"],["Emine Esmerarslan","Cyprus"],["Alice Gaspari","Italy"],
-  ["Sabela Traviesas Quintas","Spain"],["Vicky Leon Meza","Venezuela"],["Christopher Lango","Kenya"],
-  ["Essotolom Tchoude","Togo"],["Jean Janssen","Belgium"],["Laksh Thapliyal","India"],
-  ["Malaya Palanca","Philippines"],["Mika Maigaard","Denmark"],["Shashwat Shrestha","Nepal"],
-  ["Gaurav Sheoran","India"],["Elvira Misgana Tollersrud","Norway"],["Haruto Fujishiro","Japan"],
-  ["Håvard André Grane","Norway"],["Iris Davari Majd","Iran"],["Jana Shbeir","Palestine"],
-  ["Linus Strønen","Norway"],["Maria Rojas Rincon","Colombia"],["Matthis Lamothe","Haiti"],
-  ["Tale Myhren","Norway"],["Theo Espinosa","USA"],["Siya Mpofu","Zimbabwe"],
-  ["Joonatan Helve","Finland"],["Sizwe Mpanza","Eswatini"],["Carl-Emil","Denmark"],
-  ["Zarah Rizvi","USA"],["Georg Barth","Norway"],
+  { role: "President", name: "Henri", country: "Belgium" },
+  { role: "Vice President", name: "Asa", country: "USA" },
+  { role: "Secretary", name: "Beka", country: "Kyrgyz Republic" },
+  { role: "Treasurer", name: "Frans", country: "Norway" },
+  { role: "Communications", name: "Nowa", country: "Portugal" },
 ];
 
 export default function About() {
   return (
     <>
-      <section className="paper-tex">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-16 lg:pt-24 pb-16">
-          <div className="flex items-center justify-between flex-wrap gap-3 pb-4 border-b border-[var(--rule)]">
-            <div className="text-[11px] tracking-[0.18em] uppercase font-semibold text-ink/65">About · Section §02</div>
-            <div className="text-[11px] tracking-[0.18em] uppercase text-ink/50">A founding statement</div>
-          </div>
-
-          <div className="grid lg:grid-cols-12 gap-10 mt-12">
+      {/* HERO */}
+      <section className="bg-[var(--bg)]">
+        <div className="container-x pt-16 lg:pt-24 pb-16">
+          <div className="grid lg:grid-cols-12 gap-10">
             <div className="lg:col-span-8">
-              <div className="eyebrow mb-6">Who we are</div>
-              <h1 className="serif font-medium leading-[0.96] tracking-[-0.02em]" style={{ fontSize: "clamp(2.6rem, 7vw, 6.5rem)" }}>
-                The first Interact Club at <span className="italic font-light text-rotary">any UWC.</span>
+              <div className="kicker text-[var(--rotary)] mb-5">About</div>
+              <h1 className="h-display text-[clamp(2.6rem,7vw,6.2rem)]">
+                The first Interact Club at any UWC.
               </h1>
             </div>
-            <div className="lg:col-span-4 lg:pl-10 lg:border-l border-[var(--rule)]">
-              <p className="serif text-[19px] leading-[1.55] text-ink/85 dropcap">
-                Started in spring 2026 by five students at UWC Red Cross Nordic, chartered through Førde Rotary Club. We exist because students at this school don't lack ideas — they lack the structure, partners, and runway to ship them.
-              </p>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Founder's letter */}
-      <section className="py-20 lg:py-28 bg-cream/40 border-y border-[var(--rule)]">
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-10">
-          <div className="reveal">
-            <div className="eyebrow mb-8">A short letter</div>
-            <div className="serif text-[clamp(1.45rem,2.2vw,2.05rem)] leading-[1.32] tracking-[-0.008em] text-ink/95 space-y-7">
-              <p>
-                Imagine you're new to a country. You don't know anyone. You want to do something meaningful — not just talk about change, but actually create it.
-              </p>
-              <p>
-                Now imagine there's already a network of young people in 140 countries who are doing exactly that, and all you have to do is show up.
-              </p>
-              <p>
-                That network exists. It's called <strong className="text-rotary">Interact</strong>. And UWC Red Cross Nordic — a school literally built on the idea that students can change the world — didn't have one.
-              </p>
-              <p className="italic">
-                We're here to change that.
-              </p>
-            </div>
-            <div className="mt-12 flex items-center gap-5">
-              <div className="serif italic text-3xl">— Asa &amp; Henri</div>
-              <div className="rule flex-1"/>
-              <div className="text-[11px] uppercase tracking-[0.18em] text-ink/55">Co-Presidents · 2026</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Connection Rotary + UWC */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-px bg-[var(--rule)] border border-[var(--rule)]">
-          <div className="reveal bg-paper p-10 lg:p-14">
-            <img src="/logos/rotary.svg" alt="Rotary" className="h-10 mb-8"/>
-            <h3 className="serif text-3xl font-medium tracking-tight">Connection to Rotary</h3>
-            <p className="mt-5 text-[16px] text-ink/80 leading-relaxed">
-              Interact is Rotary International's program for students under 18. We're chartered through <strong>Førde Rotary Club</strong>, mentored by their president and project lead. Our work plugs into Rotary's grants, exchanges, and a 1.2-million-member global network — including the Bergen Conference and a planned 2027 Youth Exchange.
-            </p>
-          </div>
-          <div className="reveal bg-paper p-10 lg:p-14">
-            <img src="/logos/uwcrcn.png" alt="UWC RCN" className="h-10 mb-8"/>
-            <h3 className="serif text-3xl font-medium tracking-tight">Rooted at UWC RCN</h3>
-            <p className="mt-5 text-[16px] text-ink/80 leading-relaxed">
-              Hosted at UWC Red Cross Nordic in Flekke, Vestland — students from 90+ countries study together here. UWC's mission of using education to unite people, nations, and cultures for peace is the backbone of how we choose projects, partners, and people.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Board */}
-      <section className="py-20 lg:py-28 bg-cream/40 border-y border-[var(--rule)]">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-12 gap-10 mb-12">
+      {/* WHAT IS INTERACT — official Rotary description */}
+      <section className="bg-white border-y border-[var(--rule)]">
+        <div className="container-x py-24 lg:py-32">
+          <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
-              <div className="eyebrow eyebrow-num" data-num="§03">The board</div>
-              <h2 className="mt-4 serif font-medium leading-[1.02] tracking-tight" style={{ fontSize: "clamp(2.1rem, 3.6vw, 3.4rem)" }}>
-                Five names. One charter.
-              </h2>
+              <img src="/logos/interact.svg" alt="Interact" className="h-12 mb-7"/>
+              <div className="kicker text-[var(--rotary)] mb-5">What is Interact?</div>
+              <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">A Rotary program for young leaders.</h2>
             </div>
-            <p className="lg:col-span-7 lg:col-start-6 serif text-[18px] leading-relaxed text-ink/80 self-end">
-              The founding board, elected April 2026. We sign every charter document with these five names — and trust each other to do the work behind them.
+            <div className="lg:col-span-7 lg:col-start-6 text-[17.5px] leading-[1.7] text-[var(--ink)]/85 space-y-6">
+              <p>
+                <strong>Interact clubs bring together young people ages 12–18 to develop leadership skills while discovering the power of Service Above Self.</strong> Members take action, build international understanding, and make new friends around the world.
+              </p>
+              <p>
+                Each Interact club completes at least two annual projects: one that benefits the school or local community, and another that promotes international understanding. Through these projects, members develop leadership skills, connect with community leaders, learn about new cultures, and build friendships across borders.
+              </p>
+              <p>
+                Today, around <strong className="tabular">14,911</strong> Interact clubs operate in <strong className="tabular">145</strong> countries, with roughly <strong className="tabular">342,953</strong> members worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OUR CHAPTER */}
+      <section className="bg-[var(--ink)] text-white">
+        <div className="container-x py-24 lg:py-32">
+          <div className="grid lg:grid-cols-12 gap-12">
+            <div className="lg:col-span-4">
+              <div className="kicker text-white/55 mb-5">Our chapter</div>
+              <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">A chapter of that, in Flekke.</h2>
+            </div>
+            <div className="lg:col-span-7 lg:col-start-6 text-[17.5px] leading-[1.7] text-white/85 space-y-6">
+              <p>
+                The <strong className="text-white">Interact Club of UWC Vestland</strong> was chartered in spring 2026 through Førde Rotary Club. We're the first Interact Club at any United World College — a school built on the conviction that students can change the world through education that unites people, nations, and cultures.
+              </p>
+              <p>
+                Our remit is simple: give student initiative a structured channel into our region, and a real connection to Rotary's global network of <strong className="text-white tabular">1.2 million</strong> members.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-px mt-16 bg-white/10 border border-white/10">
+            <div className="bg-[var(--ink)] p-8 lg:p-10">
+              <img src="/logos/rotary.svg" alt="Rotary" className="h-9 mb-6 brightness-0 invert"/>
+              <h3 className="text-2xl font-extrabold tracking-tight">Connection to Rotary</h3>
+              <p className="mt-4 text-[15.5px] leading-relaxed text-white/80">
+                Interact is Rotary International's program for students under 18. We're chartered through Førde Rotary Club, plugged into Rotary's grants, exchanges, and global network.
+              </p>
+            </div>
+            <div className="bg-[var(--ink)] p-8 lg:p-10">
+              <img src="/logos/uwcrcn.png" alt="UWC RCN" className="h-9 mb-6 brightness-0 invert"/>
+              <h3 className="text-2xl font-extrabold tracking-tight">Rooted at UWC RCN</h3>
+              <p className="mt-4 text-[15.5px] leading-relaxed text-white/80">
+                Hosted at UWC Red Cross Nordic in Flekke, Vestland, where students from 90+ countries study together. UWC's mission of using education for peace shapes how we choose projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BOARD */}
+      <section className="bg-white">
+        <div className="container-x py-24 lg:py-32">
+          <div className="grid lg:grid-cols-12 gap-10 mb-14">
+            <div className="lg:col-span-6">
+              <div className="kicker text-[var(--rotary)] mb-5">The board</div>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Who runs the club.</h2>
+            </div>
+            <p className="lg:col-span-5 lg:col-start-8 text-[17px] leading-[1.6] text-[var(--ink)]/75 self-end">
+              The founding board, elected April 2026.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[var(--rule)] border border-[var(--rule)]">
             {board.map((b, i) => (
-              <div key={b.role + b.name} className="reveal bg-paper p-7 lg:p-8 hover:bg-paper/80 transition-colors">
-                <div className="text-[11px] uppercase tracking-[0.18em] font-bold text-ink/45 tabular">No. 0{i+1}</div>
-                <div className="mt-6 serif text-4xl font-medium tracking-tight">{b.name}</div>
-                <div className="mt-1 text-[14px] text-ink/65">{b.country}</div>
+              <div key={b.role + b.name} className="reveal tilt bg-white p-7 lg:p-8 group">
+                <div className="kicker text-[var(--ink)]/40 tabular">No. 0{i+1}</div>
+                <div className="mt-7 h-14 w-14 bg-[var(--ink)] text-white flex items-center justify-center text-xl font-extrabold group-hover:bg-[var(--rotary)] transition-colors">
+                  {b.name[0]}
+                </div>
+                <div className="mt-6 text-2xl lg:text-3xl font-extrabold tracking-tight">{b.name}</div>
+                <div className="mt-1 text-[13.5px] text-[var(--ink)]/60">{b.country}</div>
                 <div className="rule my-5"/>
-                <div className="text-[11px] uppercase tracking-[0.2em] font-bold text-rotary">{b.role}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Members ledger */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="grid lg:grid-cols-12 gap-10 mb-10">
-            <div className="lg:col-span-4">
-              <div className="eyebrow eyebrow-num" data-num="§04">The roll</div>
-              <h2 className="mt-4 serif font-medium leading-[1.02] tracking-tight" style={{ fontSize: "clamp(2.1rem, 3.6vw, 3.4rem)" }}>
-                {members.length} members. <span className="text-rotary italic font-light">{new Set(members.map(m => m[1])).size}</span> nationalities.
-              </h2>
-            </div>
-            <p className="lg:col-span-7 lg:col-start-6 serif text-[18px] leading-relaxed text-ink/80 self-end">
-              The current roster. The whole point of Interact is the people — and our people come from across the school.
-            </p>
-          </div>
-
-          <div className="border-t border-ink">
-            {members.map(([n, c], i) => (
-              <div key={n} className="grid grid-cols-12 gap-4 py-3 border-b border-[var(--rule)] hover:bg-cream/40 transition-colors">
-                <div className="col-span-1 text-[12px] tabular text-ink/45 font-semibold pt-1">{String(i+1).padStart(3, '0')}</div>
-                <div className="col-span-7 sm:col-span-7 text-[16px] font-medium">{n}</div>
-                <div className="col-span-4 text-[12px] uppercase tracking-[0.16em] text-ink/55 text-right pt-1">{c}</div>
+                <div className="kicker text-[var(--rotary)]">{b.role}</div>
               </div>
             ))}
           </div>
