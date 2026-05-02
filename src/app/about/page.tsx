@@ -28,7 +28,7 @@ export default function About() {
         <div className="container-x py-24 lg:py-32">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
-              <img src="/logos/interact.svg" alt="Interact" className="h-12 mb-7"/>
+              <img src="/logos/interact-official.png" alt="Interact" className="h-14 mb-7 w-auto"/>
               <div className="kicker text-[var(--rotary)] mb-5">What is Interact?</div>
               <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">A Rotary program for young leaders.</h2>
             </div>
@@ -101,10 +101,7 @@ export default function About() {
             {board.map((b, i) => (
               <div key={b.role + b.name} className="reveal tilt bg-white p-7 lg:p-8 group">
                 <div className="kicker text-[var(--ink)]/40 tabular">No. 0{i+1}</div>
-                <div className="mt-7 h-14 w-14 bg-[var(--ink)] text-white flex items-center justify-center text-xl font-extrabold group-hover:bg-[var(--rotary)] transition-colors">
-                  {b.name[0]}
-                </div>
-                <div className="mt-6 text-2xl lg:text-3xl font-extrabold tracking-tight">{b.name}</div>
+                <div className="mt-10 text-2xl lg:text-3xl font-extrabold tracking-tight">{b.name}</div>
                 <div className="mt-1 text-[13.5px] text-[var(--ink)]/60">{b.country}</div>
                 <div className="rule my-5"/>
                 <div className="kicker text-[var(--rotary)]">{b.role}</div>

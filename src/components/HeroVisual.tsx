@@ -46,28 +46,14 @@ export default function HeroVisual() {
           <line x1="100" y1="780" x2="260" y2="780"/>
         </g>
       </svg>
-      {/* Floating Interact gear, animating gently */}
-      <svg viewBox="0 0 200 200" className="absolute -top-8 -right-6 w-44 lg:w-56 animate-[spin_42s_linear_infinite]" aria-hidden>
-        <g fill="#0FA3DB">
-          <circle cx="100" cy="100" r="100" opacity="0.92"/>
-        </g>
-        <g fill="#fafaf7">
-          {Array.from({ length: 24 }).map((_, i) => (
-            <g key={i} transform={`rotate(${i * 15} 100 100)`}>
-              <rect x="96" y="0" width="8" height="14" rx="1"/>
-            </g>
-          ))}
-        </g>
-        <circle cx="100" cy="100" r="78" fill="#0FA3DB"/>
-        <circle cx="100" cy="100" r="68" fill="none" stroke="#fafaf7" strokeWidth="3"/>
-        <g fill="#fafaf7">
-          <rect x="97" y="40" width="6" height="120"/>
-          <g transform="rotate(60 100 100)"><rect x="97" y="40" width="6" height="120"/></g>
-          <g transform="rotate(120 100 100)"><rect x="97" y="40" width="6" height="120"/></g>
-        </g>
-        <circle cx="100" cy="100" r="14" fill="#fafaf7"/>
-        <circle cx="100" cy="100" r="9" fill="#0FA3DB"/>
-      </svg>
+      {/* Floating Rotary wheel, slow spin */}
+      <img
+        src="/logos/rotary-wheel-cyan.jpg"
+        alt=""
+        aria-hidden
+        className="absolute -top-10 -right-6 w-44 lg:w-60 animate-[spin_42s_linear_infinite] mix-blend-multiply"
+      />
+
     </div>
   );
 }

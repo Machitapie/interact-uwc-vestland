@@ -147,8 +147,8 @@ export default function Home() {
                 <a href="https://forde.rotary.no/" target="_blank" rel="noreferrer" className="cta-on-color">
                   Visit Førde Rotary <span className="cta-arrow">→</span>
                 </a>
-                <a href="https://my.rotary.org/en/club/7c4a5953-aebd-44b1-8464-f19166a479f4/details" target="_blank" rel="noreferrer" className="text-white/85 underline underline-offset-4 hover:text-white transition-colors text-[14.5px]">
-                  Club on Rotary.org
+                <a href="https://forde.rotary.no/" target="_blank" rel="noreferrer" className="text-white/85 underline underline-offset-4 hover:text-white transition-colors text-[14.5px]">
+                  forde.rotary.no
                 </a>
               </div>
             </div>

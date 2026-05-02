@@ -1,7 +1,7 @@
 const sponsors = [
   { name: "Rotary International", src: "/logos/rotary.svg", href: "https://www.rotary.org", note: "Parent organisation" },
-  { name: "Interact", src: "/logos/interact.svg", href: "https://www.rotary.org/en/get-involved/interact-clubs", note: "Youth program" },
-  { name: "UWC Red Cross Nordic", src: "/logos/uwcrcn.png", href: "https://www.uwcrcn.no", note: "Host school" },
+  { name: "Interact", src: "/logos/interact-official.png", href: "https://www.rotary.org/en/get-involved/interact-clubs", note: "Youth program" },
+  { name: "UWC Red Cross Nordic", src: "/logos/uwcrcn-color.jpg", href: "https://www.uwcrcn.no", note: "Host school" },
   { name: "Vestland fylkeskommune", src: "/logos/vestland.png", href: "https://www.vestlandfylke.no", note: "Local partner" },
 ];
 

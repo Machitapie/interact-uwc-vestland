@@ -33,10 +33,8 @@ export default function Header() {
   return (
     <header className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${scrolled ? "bg-white/95 backdrop-blur border-b border-[var(--rule)]" : "bg-[var(--bg)] border-b border-transparent"}`}>
       <div className="container-x flex items-center justify-between h-[76px]">
-        <Link href="/" className="group flex items-center gap-3 sm:gap-4" aria-label="Interact Club of UWC Vestland — home">
-          <img src="/logos/interact.svg" alt="Interact" className="h-7 sm:h-8 w-auto" />
-          <span className="w-px h-6 sm:h-7 bg-[var(--ink)]/20" aria-hidden />
-          <img src="/logos/uwcrcn.png" alt="UWC Red Cross Nordic" className="h-6 sm:h-7 w-auto" />
+        <Link href="/" className="group flex items-center" aria-label="Interact Club of UWC Vestland — home">
+          <img src="/logos/header-brand.png" alt="Interact · UWC" className="h-9 sm:h-10 w-auto" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
