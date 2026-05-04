@@ -9,8 +9,11 @@ export default function Contact() {
             <div className="lg:col-span-9">
               <div className="kicker text-[var(--rotary)] mb-5">Contact</div>
               <h1 className="h-display text-[clamp(2.6rem,7vw,6.2rem)]">
-                Let's talk.
+                Get in touch
               </h1>
+              <p className="mt-7 max-w-2xl text-[18px] leading-[1.6] text-[var(--ink)]/75">
+                The fastest way to reach us is through Instagram, or by speaking to any board member directly on campus.
+              </p>
             </div>
           </div>
         </div>
@@ -22,8 +25,8 @@ export default function Contact() {
             <div className="lg:col-span-7">
               <div className="border-t border-[var(--ink)]">
                 {[
-                  { k: "Email", v: "interact@uwcrcn.no", href: "mailto:interact@uwcrcn.no" },
                   { k: "Instagram", v: "@interact.uwc.vestland", href: INSTAGRAM_URL },
+                  { k: "On campus", v: "Speak to any board member", sub: "Or come to a meeting — we'll point you to the right person" },
                   { k: "Address", v: "UWC Red Cross Nordic", sub: "Haugland, 6968 Flekke · Vestland · Norway" },
                 ].map((row) => (
                   <div key={row.k} className="grid grid-cols-12 gap-4 py-7 border-b border-[var(--rule)]">
@@ -55,7 +58,7 @@ export default function Contact() {
                   </div>
                   <div className="rule" style={{ background: "rgba(255,255,255,0.18)" }}/>
                   <div>
-                    <div className="text-3xl font-extrabold tracking-tight">Edis</div>
+                    <div className="text-3xl font-extrabold tracking-tight">Edis Pajic</div>
                     <div className="text-white/65 mt-1.5 text-[14px]">Faculty advisor · UWC RCN</div>
                   </div>
                 </div>
@@ -68,8 +71,8 @@ export default function Contact() {
       <section className="bg-[var(--bg)]">
         <div className="container-x py-24 lg:py-32 text-center">
           <div className="kicker text-[var(--rotary)] mb-5">Stay in the loop</div>
-          <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)] max-w-[20ch] mx-auto">
-            Follow us for project announcements.
+          <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)] max-w-[24ch] mx-auto">
+            Follow along on Instagram for updates
           </h2>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="cta mt-10">Instagram <span className="cta-arrow">→</span></a>
         </div>

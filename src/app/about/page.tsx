@@ -1,9 +1,9 @@
 const board = [
-  { role: "President", name: "Henri", country: "Belgium" },
-  { role: "Vice President", name: "Asa", country: "USA" },
-  { role: "Secretary", name: "Beka", country: "Kyrgyz Republic" },
-  { role: "Treasurer", name: "Frans", country: "Norway" },
-  { role: "Communications", name: "Nowa", country: "Portugal" },
+  { role: "President", name: "Henri d'Ursel", country: "Belgium" },
+  { role: "Vice President", name: "Asa Lieberman", country: "USA" },
+  { role: "Secretary", name: "Beka Duishenbieva", country: "Kyrgyz Republic" },
+  { role: "Treasurer", name: "Frans Brunner", country: "Norway" },
+  { role: "Communications", name: "Nowa Obura Jarro", country: "Portugal" },
 ];
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
             <div className="lg:col-span-8">
               <div className="kicker text-[var(--rotary)] mb-5">About</div>
               <h1 className="h-display text-[clamp(2.6rem,7vw,6.2rem)]">
-                The first Interact Club at any UWC.
+                The first Interact Club at any UWC
               </h1>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function About() {
             <div className="lg:col-span-4">
               <img src="/logos/interact-official.png" alt="Interact" className="h-14 mb-7 w-auto"/>
               <div className="kicker text-[var(--rotary)] mb-5">What is Interact?</div>
-              <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">A Rotary program for young leaders.</h2>
+              <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">A Rotary program for young leaders</h2>
             </div>
             <div className="lg:col-span-7 lg:col-start-6 text-[17.5px] leading-[1.7] text-[var(--ink)]/85 space-y-6">
               <p>
@@ -53,7 +53,7 @@ export default function About() {
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
               <div className="kicker text-white/55 mb-5">Our chapter</div>
-              <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">A chapter of that, in Flekke.</h2>
+              <h2 className="h-section text-[clamp(2rem,3.6vw,3.2rem)]">Our chapter, in Flekke</h2>
             </div>
             <div className="lg:col-span-7 lg:col-start-6 text-[17.5px] leading-[1.7] text-white/85 space-y-6">
               <p>
@@ -90,7 +90,7 @@ export default function About() {
           <div className="grid lg:grid-cols-12 gap-10 mb-14">
             <div className="lg:col-span-6">
               <div className="kicker text-[var(--rotary)] mb-5">The board</div>
-              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Meet the team.</h2>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Meet the team</h2>
             </div>
             <p className="lg:col-span-5 lg:col-start-8 text-[17px] leading-[1.6] text-[var(--ink)]/75 self-end">
               The founding board, elected April 2026.
@@ -98,10 +98,9 @@ export default function About() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[var(--rule)] border border-[var(--rule)]">
-            {board.map((b, i) => (
+            {board.map((b) => (
               <div key={b.role + b.name} className="reveal tilt bg-white p-7 lg:p-8 group">
-                <div className="kicker text-[var(--ink)]/40 tabular">No. 0{i+1}</div>
-                <div className="mt-10 text-2xl lg:text-3xl font-extrabold tracking-tight">{b.name}</div>
+                <div className="text-xl lg:text-2xl font-extrabold tracking-tight leading-tight">{b.name}</div>
                 <div className="mt-1 text-[13.5px] text-[var(--ink)]/60">{b.country}</div>
                 <div className="rule my-5"/>
                 <div className="kicker text-[var(--rotary)]">{b.role}</div>

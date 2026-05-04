@@ -23,7 +23,7 @@ export default async function Projects() {
             <div className="lg:col-span-8">
               <div className="kicker text-[var(--rotary)] mb-5">Projects</div>
               <h1 className="h-display text-[clamp(2.6rem,7vw,6.2rem)]">
-                What we're building.
+                What we're building
               </h1>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default async function Projects() {
             <div className="max-w-3xl">
               <div className="text-7xl lg:text-8xl font-extrabold tabular leading-none text-[var(--rotary)]">01</div>
               <h2 className="mt-8 h-section text-[clamp(2.2rem,4vw,3.4rem)]">
-                More projects to come.
+                More projects to come
               </h2>
               <p className="mt-7 text-[18px] leading-[1.6] text-[var(--ink)]/75 max-w-2xl">
                 We were chartered in spring 2026 and we're shaping our first wave of projects right now — together with Førde Rotary Club, NGOs in Norway, and partners across the Rotary network. Watch this space.
@@ -90,7 +90,7 @@ export default async function Projects() {
           <div className="grid lg:grid-cols-12 gap-10 mb-14">
             <div className="lg:col-span-5">
               <div className="kicker text-[var(--rotary)] mb-5">How we ship</div>
-              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Our process.</h2>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">How we work</h2>
             </div>
           </div>
           <div className="grid md:grid-cols-4 gap-px bg-[var(--rule)] border border-[var(--rule)]">

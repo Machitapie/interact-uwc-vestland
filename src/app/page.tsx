@@ -14,7 +14,7 @@ export default function Home() {
             <div className="lg:col-span-7 flex flex-col justify-center">
               <div className="tag-soft text-[var(--rotary)] mb-7">Chartered with Førde Rotary Club</div>
               <h1 className="h-display text-[clamp(3rem,8.4vw,7.6rem)]">
-                Where students at UWC <span className="text-[var(--rotary)]">take action.</span>
+                Where students at UWC <span className="text-[var(--rotary)]">take action</span>
               </h1>
               <p className="mt-8 max-w-xl text-[18px] leading-[1.55] text-[var(--ink)]/75">
                 We're the <strong>Interact Club of UWC Vestland</strong> — the first Interact Club at any United World College, chartered through Førde Rotary Club. Together we turn ideas into projects with real partners, real timelines, and real outcomes.
@@ -78,7 +78,7 @@ export default function Home() {
             <div className="lg:col-span-5">
               <div className="kicker text-white/60 mb-7">Our mission</div>
               <h2 className="h-section text-[clamp(2.4rem,5vw,4.4rem)]">
-                Turn ideas into things <span className="text-[var(--uwc)]">that ship.</span>
+                Turn ideas into things <span className="text-[var(--uwc)]">that ship</span>
               </h2>
             </div>
             <div className="lg:col-span-6 lg:col-start-7">
@@ -109,7 +109,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-12 gap-10 mb-16">
             <div className="lg:col-span-5">
               <div className="kicker text-[var(--rotary)] mb-5">How we work</div>
-              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">What we believe.</h2>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">What we believe</h2>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="lg:col-span-7">
               <div className="kicker text-white/55 mb-7">Our chartering partner</div>
               <h2 className="h-section text-[clamp(2.4rem,5.6vw,5rem)]">
-                Førde Rotary Club.
+                Førde Rotary Club
               </h2>
               <p className="mt-7 max-w-xl text-[17.5px] leading-[1.6] text-white/85">
                 We were chartered through <strong className="text-white">Førde Rotary Club</strong> in spring 2026. Their president, <strong className="text-white">Gro Eliassen</strong>, and Rotary Norway's Head of Youth Exchange, <strong className="text-white">Rolf Thingvold</strong>, mentor us directly.

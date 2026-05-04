@@ -12,7 +12,7 @@ export default function GetInvolved() {
             <div className="lg:col-span-9">
               <div className="kicker text-[var(--rotary)] mb-5">Get involved</div>
               <h1 className="h-display text-[clamp(2.6rem,7vw,6.2rem)]">
-                Show up. Build something.
+                Three ways to take part
               </h1>
             </div>
           </div>
@@ -47,7 +47,7 @@ export default function GetInvolved() {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7">
               <div className="kicker text-white/55 mb-7">Support our work</div>
-              <h2 className="h-section text-[clamp(2.4rem,5vw,4.4rem)]">Fund a project.</h2>
+              <h2 className="h-section text-[clamp(2.4rem,5vw,4.4rem)]">Support a project</h2>
               <p className="mt-7 text-[18px] leading-[1.6] text-white/85 max-w-xl">
                 We keep dues low so finances aren't a barrier to joining. Donations cover campaign materials, travel to Bergen, and seed funding for the next student-led initiative.
               </p>
@@ -75,7 +75,7 @@ export default function GetInvolved() {
           <div className="grid lg:grid-cols-12 gap-10 mb-14">
             <div className="lg:col-span-5">
               <div className="kicker text-[var(--rotary)] mb-5">Common questions</div>
-              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Asked & answered.</h2>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Frequently asked</h2>
             </div>
           </div>
           <div className="border-t border-[var(--ink)]">

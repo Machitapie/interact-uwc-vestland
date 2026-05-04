@@ -11,7 +11,7 @@ export default function Sponsors() {
         <div className="grid lg:grid-cols-12 gap-10 mb-14">
           <div className="lg:col-span-5">
             <div className="kicker text-[var(--rotary)] mb-5">Partners</div>
-            <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Backed by a global network.</h2>
+            <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Backed by a global network</h2>
           </div>
           <p className="lg:col-span-6 lg:col-start-7 text-[17px] leading-[1.6] text-[var(--ink)]/75 self-end">
             Chartered through Førde Rotary Club. Hosted at UWC Red Cross Nordic. Plugged into Rotary International's network of 1.2&nbsp;million members across 140 countries.
