@@ -60,7 +60,7 @@ export default function About() {
                 The <strong className="text-white">Interact Club of UWC Vestland</strong> was chartered in spring 2026 through Førde Rotary Club. We're the first Interact Club at any United World College — a school built on the conviction that students can change the world through education that unites people, nations, and cultures.
               </p>
               <p>
-                Our remit is simple: give student initiative a structured channel into our region, and a real connection to Rotary's global network of <strong className="text-white tabular">1.2 million</strong> members.
+                What we do is simple: make space for student ideas to become real projects — locally in Vestland, and globally through Rotary's network of <strong className="text-white tabular">1.2 million</strong> members.
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function About() {
           <div className="grid lg:grid-cols-12 gap-10 mb-14">
             <div className="lg:col-span-6">
               <div className="kicker text-[var(--rotary)] mb-5">The board</div>
-              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Who runs the club.</h2>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Meet the team.</h2>
             </div>
             <p className="lg:col-span-5 lg:col-start-8 text-[17px] leading-[1.6] text-[var(--ink)]/75 self-end">
               The founding board, elected April 2026.

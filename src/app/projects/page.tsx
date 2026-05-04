@@ -95,9 +95,9 @@ export default async function Projects() {
           </div>
           <div className="grid md:grid-cols-4 gap-px bg-[var(--rule)] border border-[var(--rule)]">
             {[
-              { n: "01", t: "Idea", b: "Bring a problem, not a solution. We help shape it." },
+              { n: "01", t: "Idea", b: "Bring a problem, not a solution — we'll shape it together." },
               { n: "02", t: "Match", b: "Connect to Rotary's network, NGOs, or local government." },
-              { n: "03", t: "Build", b: "A small team owns it. We help with structure, partners, funding." },
+              { n: "03", t: "Build", b: "A small team owns it — supported on structure, partners, and funding." },
               { n: "04", t: "Ship", b: "Concrete outputs. Not a slide deck — a campaign, an event, an outcome." },
             ].map(s => (
               <div key={s.n} className="bg-white p-7 lg:p-9">

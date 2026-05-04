@@ -17,7 +17,7 @@ export default function Home() {
                 Where students at UWC <span className="text-[var(--rotary)]">take action.</span>
               </h1>
               <p className="mt-8 max-w-xl text-[18px] leading-[1.55] text-[var(--ink)]/75">
-                We're the <strong>Interact Club of UWC Vestland</strong> — the first Interact Club at any United World College, chartered through Førde Rotary Club. We turn student ideas into projects with real partners, real timelines, and real outcomes.
+                We're the <strong>Interact Club of UWC Vestland</strong> — the first Interact Club at any United World College, chartered through Førde Rotary Club. Together we turn ideas into projects with real partners, real timelines, and real outcomes.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 <Link href="/get-involved" className="cta">
@@ -109,12 +109,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-12 gap-10 mb-16">
             <div className="lg:col-span-5">
               <div className="kicker text-[var(--rotary)] mb-5">How we work</div>
-              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">Three things we hold to.</h2>
+              <h2 className="h-section text-[clamp(2.2rem,4.4vw,3.8rem)]">What we believe.</h2>
             </div>
           </div>
           <div className="grid md:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
             {[
-              { n: "01", t: "Student-led", b: "The board is students. Project leads are students. We don't ask permission to start — we ask for help to ship." },
+              { n: "01", t: "Student-led", b: "Run by students, with students. Anyone can start something — and we'll help you build it." },
               { n: "02", t: "Project-based", b: "Every project answers to a real partner with a real timeline. If we can't point at an outcome, we shouldn't have started." },
               { n: "03", t: "Locally rooted, globally connected", b: "Førde first, then Bergen, Oslo, Copenhagen, Geneva. Real relationships compound over time." },
             ].map((p) => (
