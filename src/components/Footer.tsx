@@ -32,9 +32,9 @@ export default function Footer() {
           <div className="lg:col-span-3">
             <div className="kicker text-white/55 mb-5">Reach us</div>
             <ul className="space-y-3 text-[15px]">
-              <li><a href="mailto:interact@uwcrcn.no" className="hover:text-white text-white/85 transition-colors">interact@uwcrcn.no</a></li>
               <li><a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" className="hover:text-white text-white/85 transition-colors">@interact.uwc.vestland</a></li>
               <li><a href="https://forde.rotary.no/" target="_blank" rel="noreferrer" className="hover:text-white text-white/85 transition-colors">Førde Rotary Club</a></li>
+              <li><a href="https://www.uwcrcn.no" target="_blank" rel="noreferrer" className="hover:text-white text-white/85 transition-colors">UWC Red Cross Nordic</a></li>
             </ul>
           </div>
         </div>

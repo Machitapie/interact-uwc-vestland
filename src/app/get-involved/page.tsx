@@ -23,7 +23,7 @@ export default function GetInvolved() {
         <div className="container-x py-16 lg:py-20">
           <div className="grid md:grid-cols-3 gap-px bg-[var(--rule)] border border-[var(--rule)]">
             {[
-              { n: "01", t: "Become a member", b: "Open to any UWC RCN student. Bring an idea or just curiosity — we'll meet you where you are.", cta: "Email us", href: "mailto:interact@uwcrcn.no" },
+              { n: "01", t: "Become a member", b: "Open to any UWC RCN student. Bring an idea or just curiosity — we'll meet you where you are.", cta: "Reach out on Instagram", href: INSTAGRAM_URL },
               { n: "02", t: "Partner with us", b: "NGO, Rotary club, alum, or local business — if you want to mentor a project, host an event, or sponsor an initiative, we'd like to hear from you.", cta: "Reach out", href: "/contact" },
               { n: "03", t: "Follow + share", b: "Project updates, calls for ideas, and member features. Sharing is the easiest way to support the club.", cta: "@interact.uwc.vestland", href: INSTAGRAM_URL },
             ].map(c => (
